@@ -1,0 +1,5 @@
+    Basically to make a object orbitate/spin you add one object to another like a parent-child relation
+and when the parent rotates/translates, its child will also move around, but at the same speed as of its
+parent. So we make all planets bound to Object3D, and make'em rotate at its own speed around the sun.
+
+    Since the sun is the light source, we make a point lighter that imits light in all directions.
