@@ -1,0 +1,22 @@
+Cannon.js is a js library to simulate real world physics (gravity,inercia,friction,collision)
+
+
+1 - Creation of a physics world (Cannon.js)
+2 - Creation of a mesh, visual entity (Three.js)
+3 - Creation of a transparent entity, body, affect by the physics fenomenun (Cannon.js)
+4 - Merge mesh with the body
+
+{[(1)]}
+npm install cannon-es
+
+OBS
+He rotates the plane with CANNON because it's a physical body and the mesh copies the body's translation and rotation
+
+The shape of the body needs to be half of the shape of the mesh
+example: 
+    const groundGeo = new THREE.PlaneGeometry(30, 30);
+    shape: new CANNON.Box(new CANNON.Vec3(15,15,0.1))
+
+To simulate collision, CANNON.js has a built-in material for objects
+CANNON: how body react when collision
+THREE: Visual, provides the local of an object
