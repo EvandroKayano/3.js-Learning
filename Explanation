@@ -1,0 +1,4 @@
+Creating object when mouse-click
+
+1 - create an invisible plane facing directly the camera, every time mouse move is detected
+(vector, originPoint) -> (normalVector, pointClickRayCaster)
