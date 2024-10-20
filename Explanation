@@ -1,0 +1,14 @@
+Creating object when mouse-click AND ADDING PHYSICS TO THE BALLS
+
+1 - create an invisible plane facing directly the camera, every time mouse move is detected
+(vector, originPoint) -> (normalVector, pointClickRayCaster)
+
+
+since we create the balls dynamics there's no way to pass the mesh and the body to the animate function.
+So we use 2 array to store that info and pass it for the function meshes[0] and bodies[0] references the same ball.
+
+
+The position of the ballBody will be the position of the click
+
+Also their colors will be random
+Enabling shadows
