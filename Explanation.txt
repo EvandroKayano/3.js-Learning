@@ -1,20 +1,4 @@
-    A model can be composed of many Meshes and Materials, but how do i Get access to a certain property 
-that forms the model using 3.js
+This repo exists just so I can make mini checkpoints for each video from the playlist:
+https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho&index=2&ab_channel=WaelYasmina
 
-other meshes in quaternium.com
-
-to see its components, console.log(model);
-grupo>children>0>children>group>children
-for the donkey we have 7 meshes
-to access the 5th line: 
-    model.children[0].children[5].children[4].material
-            or
-    three.js: getObjectByName
-
-
-threejs.org/editor/
-drag the gltf file
-add directionalLight
-in Scene, inspect the model's elements
-
-creating gui/options menu to change each of the donkey meshes' colors
+Yep! 66 episodes, I don't know if I'm going to be commiting all 66.
