@@ -1,0 +1,8 @@
+How to subdivide a plane in equivalent squares
+How to put objects on top of each square and prevent to put more than one
+
+A bit of animation
+
+1 - Detect the interesection between the cursor and the plane (rayCaster)
+2 - .floor() to get the floor of each vector components (1.5 , 0 -1.3) => (1, 0, -2)
+3 - 1x1 plane that serves as an indicator where the cursor is on top of the plane (.addScalar(0.5) to correct 3.js default config)
