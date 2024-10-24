@@ -1,4 +1,8 @@
-This repo exists just so I can make mini checkpoints for each video from the playlist:
-https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho&index=2&ab_channel=WaelYasmina
+    Make clones of a model by clicking in highlighted spot on a grided plane
 
-Yep! 66 episodes, I don't know if I'm going to be commiting all 66.
+After replacing the yellow ball from clicking on the highlighted plane, the stag model will be texture wise mixed. That's
+because the .clone() method DOESN'T WORK on models, only in meshes
+
+import * as SkeletonUtils
+
+EVERY MODEL HAS ITS MIXER
