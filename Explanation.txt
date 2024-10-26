@@ -1,4 +1,32 @@
-This repo exists just so I can make mini checkpoints for each video from the playlist:
-https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho&index=2&ab_channel=WaelYasmina
+    Realistic Scenes
 
-Yep! 66 episodes, I don't know if I'm going to be commiting all 66.
+Dynamic range - range from pure black to pure white, capability to capture the darkest points and the lightest ones (Cameras and Monitors)
+HDR = HIGH DYNAMIC RANGE
+MORE Dynamic range, MORE details, MORE Realistic
+
+many pictures in diferent DynRanges .hdr >>> .png,.jpg
+
+hdr (16 bits) -> monitor (8 bits)
+               |
+          Tone Mapping
+
+Compressing a file without damaging its details (a lot)
+
+threejs has a tone mapping algorithym
+
+
+Gamma correction
+
+png/jpg are already corrected, their files are brighter
+hdr/exr are images as they are, no corretion
+used in CGI and gameDev - renderers require linear work flow
+
+.hdr -> three.js -> CORRECT
+.png/.jpg -> three.js -> WRONG
+
+sRGB - standard RGB (color space)
+
+
+https://www.maxroz.com/hdri
+
+download a hdr pack here
