@@ -1,0 +1,42 @@
+https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho&index=2&ab_channel=WaelYasmina
+
+npm init
+
+npm install parcel --save-dev
+
+npm install three
+
+parcel .\src\index.html
+
+Se(der erro){
+    Get-ExecutionPolicy -List
+
+    Se(CurrentUser != RemoteSigned){
+        Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    }
+
+}
+
+// clica em http://localhost:1234 com ctrl ativado
+
+
+if using GUI
+npm install dat.gui
+
+
+if using CANNON
+npm install cannon-es
+
+
+if sketchfab
+npm install -D parcel-reporter-static-files-copy
+npm install @parcel/config-default --save-dev
+create a new file called ".parcelrc" with 2 lines:
+{
+  "extends": ["@parcel/config-default"],
+  "reporters":  ["...", "parcel-reporter-static-files-copy"]
+}
+add in package.json:
+"staticFiles" : {
+    "staticOutPath": "assets"
+}

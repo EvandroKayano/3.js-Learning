@@ -1,4 +1,28 @@
-This repo exists just so I can make mini checkpoints for each video from the playlist:
-https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho&index=2&ab_channel=WaelYasmina
+ Models from sketchfab
 
-Yep! 66 episodes, I don't know if I'm going to be commiting all 66.
+    dist and src folders problematic to put all models/textures in a directory called assets
+
+1 - we have to import each texture and maps, and parcel will create copy in the dist folder
+2 - parcel flattens the dist folder, all copies in the dist folder
+
+he prefers a folder called "static", don't want to perform any kind of operation on them, so parcel will create
+a subdirectory in dist and fill it with the copies
+
+in the static folder, put the sketchfab arquives such as textures, scene.bin scene.gltf and the hdr
+
+but a plugin is need called "parcel-reporter-static-files-copy'
+
+npm install -D parcel-reporter-static-files-copy
+npm install @parcel/config-default --save-dev
+
+create a new file called ".parcelrc" with 2 lines:
+
+{
+  "extends": ["@parcel/config-default"],
+  "reporters":  ["...", "parcel-reporter-static-files-copy"]
+}
+
+add in package.json
+"staticFiles" : {
+    "staticOutPath": "assets"
+}
