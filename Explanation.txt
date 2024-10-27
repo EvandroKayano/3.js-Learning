@@ -1,4 +1,43 @@
-This repo exists just so I can make mini checkpoints for each video from the playlist:
-https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho&index=2&ab_channel=WaelYasmina
+Creating a simulation setting a texture to a hall and moving the camera by clicking
 
-Yep! 66 episodes, I don't know if I'm going to be commiting all 66.
+using this command you can see in the console, where to position the camera
+window.addEventListener('mouseup', function() {
+    //console.log(camera.position);
+});
+
+inside the previous code line you can put these to move the camera to a point and then rotate it
+
+        gsap.to(camera.position, {
+            x:-1.8,
+            y: 1.6,
+            z: 5,
+            duration: 3
+        });
+
+        gsap.to(camera.rotation, {
+            x: 0,
+            y: 0.1,
+            z: 0,
+            duration: 3.2
+        });
+
+SETUP:
+in the static folder, put the sketchfab arquives such as textures, scene.bin scene.gltf (and the hdr)
+npm install -D parcel-reporter-static-files-copy
+npm install @parcel/config-default --save-dev
+
+create a new file called ".parcelrc" with 2 lines:
+{
+  "extends": ["@parcel/config-default"],
+  "reporters":  ["...", "parcel-reporter-static-files-copy"]
+}
+
+add in package.json:
+"staticFiles" : {
+    "staticOutPath": "assets"
+}
+
+then:
+parcel .\src\index.html
+
+also a assets folder in src with the same arquives as in static
