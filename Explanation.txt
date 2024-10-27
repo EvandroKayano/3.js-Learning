@@ -1,4 +1,2 @@
-This repo exists just so I can make mini checkpoints for each video from the playlist:
-https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho&index=2&ab_channel=WaelYasmina
+MAKING A LOADING SCREEN
 
-Yep! 66 episodes, I don't know if I'm going to be commiting all 66.
