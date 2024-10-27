@@ -1,0 +1,3 @@
+Moving the camera like a cinematic
+
+npm install gsap
